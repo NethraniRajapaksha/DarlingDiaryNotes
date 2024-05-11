@@ -3,6 +3,8 @@
     <style name="Base.Theme.LabExam4" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/pink</item>
+        <item name="android:statusBarColor">@color/pink</item>
     </style>
 
     <style name="Theme.LabExam4" parent="Base.Theme.LabExam4" />
