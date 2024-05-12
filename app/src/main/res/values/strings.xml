@@ -6,7 +6,7 @@
     <string name="title"> \t Enter a title</string>
     <string name="thought"> \t\tType Your thought here ...</string>
     <string name="ALLthought"> \t\tAll Thoughts</string>
-
+    <string name="edit">Edit Your Thought</string>
 
 
 </resources>

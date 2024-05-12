@@ -2,10 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/add_main"
+    android:id="@+id/update_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddNoteActivity">
+    tools:context=".UpdateActivity">
 
     <ImageView
         android:id="@+id/imageView19"
@@ -24,12 +24,12 @@
         tools:layout_editor_absoluteY="0dp">
 
         <TextView
-            android:id="@+id/addNote"
+            android:id="@+id/editNoteHeading"
             android:layout_width="249dp"
             android:layout_height="54dp"
             android:layout_marginTop="44dp"
             android:fontFamily="sans-serif-black"
-            android:text="@string/Add"
+            android:text="Edit Your Thought"
             android:textColor="@color/pink"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
@@ -38,14 +38,14 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/titleEditText"
+            android:id="@+id/updateTitleEditText"
             android:layout_width="340dp"
             android:layout_height="74dp"
             android:layout_marginTop="24dp"
             android:ems="10"
             android:fontFamily="sans-serif-condensed-light"
             android:inputType="text"
-            android:text="@string/title"
+            android:text="Update Title"
             android:textColor="@color/pink"
             android:textColorHint="@color/pink"
             android:textSize="20sp"
@@ -53,10 +53,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.415"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/addNote" />
+            app:layout_constraintTop_toBottomOf="@+id/editNoteHeading" />
 
         <EditText
-            android:id="@+id/contentEditText"
+            android:id="@+id/updateContentEditText"
             android:layout_width="344dp"
             android:layout_height="496dp"
             android:background="@drawable/pink_border"
@@ -69,21 +69,22 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.384"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/titleEditText"
+            app:layout_constraintTop_toBottomOf="@+id/updateTitleEditText"
             app:layout_constraintVertical_bias="0.189" />
 
-        <ImageButton
-            android:id="@+id/saveButton"
+        <ImageView
+            android:id="@+id/updateSaveButton"
             android:layout_width="84dp"
             android:layout_height="83dp"
             android:layout_marginTop="28dp"
             android:backgroundTint="@color/BGpink"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
-            app:layout_constraintStart_toEndOf="@+id/addNote"
+            app:layout_constraintHorizontal_bias="0.145"
+            app:layout_constraintStart_toEndOf="@+id/editNoteHeading"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/round_assignment_turned_in_24" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
